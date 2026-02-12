@@ -8,7 +8,7 @@
 
 - ✅ Thu thập dữ liệu và xử lý dữ liệu đầu vào (loại bỏ dữ liệu trùng, dữ liệu rỗng)
 - ✅ Extract feature
-- ✅ 5 Machine Learning Classifiers (DT, MNB, SVM, LR, k-NN)
+- ✅ 5 Machine Learning Classifiers (SVM linear, SVM poly, Random Forest, k-NN)
 - ✅ Tính toán các chỉ số: Accuracy, Sensitive / Recall, Specificity, Precision, F1
 
 ---
