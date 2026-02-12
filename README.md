@@ -1,7 +1,6 @@
 # 🛡️ Detecting Cross-Site Scripting Attacks Using Machine Learning
 
-**Kết quả chính:** Decision Tree đạt **99.73% accuracy** sau khi áp dụng Chi-square Feature Selection  
-(**giảm 95% features: 49,607 → 2,551**) ## TODO
+**Kết quả chính:** ## TODO
 
 ---
 
