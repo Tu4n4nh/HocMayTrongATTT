@@ -125,8 +125,28 @@ flowchart TD
   E --> F
 
   C --> C1[url_to_payload_core<br/>Lấy “payload” từ URL]
-  C1 --> C2[decode_layers<br/> HTML decode, URL decode, Unicode decode]
-  C2 --> C3[remove_br_tags<br/>Xoá thẻ <br>]
+  C1 --> C2[decode_layers<br/> HTML / URL / Unicode / Hex / Base64 / CharCode decode]
+```
+
+```mermaid
+flowchart TD
+  A[Đọc CSV đầu vào] --> B[label mapping<br/>Map CLASS_COL -> label]
+
+  %% ===== Preprocess Block =====
+  subgraph PREPROCESS[Preprocess]
+    C[url_to_payload_core<br/>Lấy “payload” từ URL]
+    C --> C1[decode_layers<br/>HTML / URL / Unicode / Hex / Base64 / CharCode decode]
+    C1 --> C2[preprocess<br/>Chuẩn hoá text cho ML]
+  end
+
+  B --> C
+
+  %% Sau khi preprocess hoàn tất
+  C2 --> D[extract_features<br/>Trích feature 0/1 từ ký tự & keyword]
+  C2 --> E[payload_human_readable_by_percentage<br/>Feature readability 0/1]
+
+  D --> F[concat / out<br/>Gộp features + readability + label]
+  E --> F
 ```
 
 .
