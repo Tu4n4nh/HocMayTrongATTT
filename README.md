@@ -118,19 +118,6 @@ flowchart TD
 ```mermaid
 flowchart TD
   A[Đọc CSV đầu vào] --> B[label mapping<br/>Map CLASS_COL -> label]
-  B --> C[preprocess<br/>Chuẩn hoá text cho ML]
-  C --> D[extract_features<br/>Trích feature 0/1 từ ký tự & keyword]
-  C --> E[payload_human_readable_by_percentage<br/>Feature readability 0/1]
-  D --> F[concat / out<br/>Gộp features + readability + label]
-  E --> F
-
-  C --> C1[url_to_payload_core<br/>Lấy “payload” từ URL]
-  C1 --> C2[decode_layers<br/> HTML / URL / Unicode / Hex / Base64 / CharCode decode]
-```
-
-```mermaid
-flowchart TD
-  A[Đọc CSV đầu vào] --> B[label mapping<br/>Map CLASS_COL -> label]
 
   %% ===== Preprocess Block =====
   subgraph PREPROCESS[Preprocess]
