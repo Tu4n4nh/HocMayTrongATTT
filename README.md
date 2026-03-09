@@ -9,7 +9,7 @@ Best performing model: Random Forest (F1 = 0.9891±0.0018)
 ## 📌 Các bước thực hiện
 
 - ✅ Thu thập dữ liệu và xử lý dữ liệu đầu vào (loại bỏ dữ liệu trùng, dữ liệu rỗng)
-- ✅ Extract feature
+- ✅ Trích xuất đặc trưng
 - ✅ 4 Machine Learning Classifiers (SVM linear, SVM poly, Random Forest, k-NN)
 - ✅ Tính toán các chỉ số: Accuracy, Sensitive / Recall, Specificity, Precision, F1
 
