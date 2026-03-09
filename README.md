@@ -22,7 +22,6 @@ AnToanHocMay/
 │
 ├── extract.ipynb
 ├── Payloads.csv
-├── Payloads_clean.csv
 ├── features.csv
 └── README.md
 ```
