@@ -75,7 +75,7 @@ Dataset gốc: **Payloads.csv** từ Github
 - Decode dữ liệu
 - Loại bỏ dữ liệu bị trùng
 
-**Output:** `Payloads_clean.csv` (37,810 mẫu)
+**Output:** 37,810 mẫu đã làm sạch
 
 **Phân phối:**
 
