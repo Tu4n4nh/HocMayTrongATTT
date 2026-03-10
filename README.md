@@ -124,25 +124,29 @@ Tổng số đặc trưng: **61**
 
 #### 1. Ký tự đặc biệt
 
-| Feature            | Description               |
-| ------------------ | ------------------------- |
-| num_script         | Số lần xuất hiện `script` |
-| num_angle_brackets | Số ký tự `<` và `>`       |
-| num_quotes         | Số dấu `'` và `"`         |
-| num_semicolon      | Số `;`                    |
+| Features Group               | Terms                                                                                                       |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Punctuation**              | &, %, /, \, +, ,, ?, !, ;, :, #, =, [, ], $, (, ), ^, \*, ', ", -, <, >, @, \_, ;, {, }, ~, ., space, \|, ¦ |
+| **Punctuation Combinations** | ><, ' ", ><, [], ==, &#                                                                                     |
 
-#### 2. Keyword XSS
+#### 2. Keyword
 
-| Feature     | Description  |
-| ----------- | ------------ |
-| has_alert   | có `alert()` |
-| has_onerror | có `onerror` |
-| has_onload  | có `onload`  |
-| has_eval    | có `eval()`  |
+| Đặc trưng          | Mô tả                                           |
+| ------------------ | ----------------------------------------------- |
+| **Readability**    | Number of alphabetical characters in the script |
+| **Objects**        | document, window, iframe, location, this        |
+| **Events**         | onload, onerror                                 |
+| **Methods**        | createElement, String.fromCharCode, search      |
+| **Tags**           | div, img, `<script>`                            |
+| **Attributes**     | src, href, cookie                               |
+| **Reserved words** | var                                             |
+| **Functions**      | eval()                                          |
+| **Protocol**       | http                                            |
+| **External file**  | .js                                             |
 
 #### 3. Character statistics
 
-| Feature       | Description          |
+| Đặc trưng     | Mô tả                |
 | ------------- | -------------------- |
 | length        | độ dài payload       |
 | digit_ratio   | tỉ lệ số             |
