@@ -2,7 +2,10 @@
 
 **Kết quả chính:**
 
-Best performing model: Random Forest (F1 = 0.9891±0.0018)
+Best performing model: Dựa trên sổ lượng payload để lọt và thời gian train, Random Forest cho kết quả tốt nhất (F1 = 0.9891±0.0018)
+
+False Negative: top 2
+Time: top 2
 
 ---
 
