@@ -2,10 +2,10 @@
 
 **Kết quả chính:**
 
-Best performing model: Dựa trên sổ lượng payload để lọt và thời gian train, Random Forest cho kết quả tốt nhất (F1 = 0.9891±0.0018)
+Best performing model: Dựa trên sổ lượng payload để lọt và thời gian train, Random Forest cho kết quả tốt nhất (F1 = 0.9889±0.0014)
 
-False Negative: top 2
-Time: top 2
+False Negative: top 2 (106)
+Time: top 2 (16.82s)
 
 ---
 
@@ -246,33 +246,33 @@ k-fold = 10
 Model: SVM linear (C=0.1)
 | | Predicted Benign | Predicted Attack |
 | ------------- | ---------------- | ---------------- |
-| Actual Benign | 27728 | 337 |
-| Actual Attack | 206 | 9539 |
+| Actual Benign | 27,725 | 340 |
+| Actual Attack | 216 | 9529 |
 
 Model: SVM Poly (deg=3, C=10)
 | | Predicted Benign | Predicted Attack |
 | ------------- | ---------------- | ---------------- |
-| Actual Benign | 27902 | 163 |
-| Actual Attack | 100 | 9645 |
+| Actual Benign | 27912 | 153 |
+| Actual Attack | 274 | 9641 |
 
 Model: KNN (k=5, distance)
 | | Predicted Benign | Predicted Attack |
 | ------------- | ---------------- | ---------------- |
-| Actual Benign | 27960 | 105 |
+| Actual Benign | 27946 | 119 |
 | Actual Attack | 165 | 9580 |
 
 Model: Random Forest (n=200)
 | | Predicted Benign | Predicted Attack |
 | ------------- | ---------------- | ---------------- |
-| Actual Benign | 27960 | 105 |
-| Actual Attack | 107 | 9638 |
+| Actual Benign | 27955 | 110 |
+| Actual Attack | 106 | 9639 |
 
 | Model         | Accuracy      | Recall        | Specificity   | Precision     | F1            | Time     |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------- |
-| Linear SVM    | 0.9856±0.0024 | 0.9789±0.0041 | 0.9880±0.0025 | 0.9659±0.0069 | 0.9723±0.0045 | 5.39s    |
-| SVM Poly      | 0.9930±0.0012 | 0.9897±0.0030 | 0.9942±0.0009 | 0.9834±0.0027 | 0.9865±0.0023 | 1435.24s |
-| Random Forest | 0.9944±0.0009 | 0.9890±0.0021 | 0.9963±0.0010 | 0.9892±0.0028 | 0.9891±0.0018 | 70.49s   |
-| k-NN          | 0.9929±0.0010 | 0.9831±0.0028 | 0.9963±0.0006 | 0.9892±0.0019 | 0.9861±0.0020 | 7943.81s |
+| Linear SVM    | 0.9853±0.0015 | 0.9778±0.0021 | 0.9879±0.0014 | 0.9656±0.0038 | 0.9717±0.0028 | 2.97s    |
+| SVM Poly      | 0.9932±0.0009 | 0.9893±0.0024 | 0.9945±0.0006 | 0.9844±0.0017 | 0.9868±0.0017 | 1237.75s |
+| Random Forest | 0.9943±0.0007 | 0.9891±0.0015 | 0.9961±0.0006 | 0.9887±0.0017 | 0.9889±0.0014 | 16.82s   |
+| k-NN          | 0.9925±0.0009 | 0.9831±0.0016 | 0.9958±0.0008 | 0.9877±0.0023 | 0.9854±0.0016 | 6339.13s |
 
 ### 🔄 Tổng quan luồng xử lý
 
