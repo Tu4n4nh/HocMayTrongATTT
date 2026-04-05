@@ -241,7 +241,7 @@ Sử dụng Grid Search để lựa chọn các hyperparemeter của mô hình
 
 ## 📊 Experiment Results
 
-k-fold = 10
+k-fold = 5
 
 Model: SVM linear (C=0.1)
 | | Predicted Benign | Predicted Attack |
