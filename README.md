@@ -248,7 +248,6 @@ Dự án sử dụng 4 thuật toán Machine Learning phổ biến để phân l
 - Sensitivity / Recall
 - Specificity
 - Precision
-- F1-score
 - Thời gian
 - CPU / RAM
 
@@ -348,7 +347,7 @@ Trong kết quả thực nghiệm, tất cả các mô hình đều đạt AUC t
 | ----------------- | --------------------------- | ------------------- | ----------------------------- |
 | **KNN**           | Không đều (top 2 vượt trội) | ⚠️ Trung bình       | Dễ bias theo pattern đơn giản |
 | **SVM Linear**    | Rất đều                     | ❌ Không            | Thấp                          |
-| **SVM Poly**      | Rất lệch                    | 🔴 Có (rõ rệt)      | ⚠️ Overfitting                |
+| **SVM Poly**      | Rất lệch                    | 🔴 Có (rõ rệt)      | ⚠️ Bias                       |
 | **Random Forest** | Khá đều                     | ❌ Không            | Thấp                          |
 
 <p align="center">
