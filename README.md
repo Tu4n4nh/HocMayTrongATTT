@@ -20,6 +20,7 @@ AnToanHocMay/
 ├── extract.ipynb
 ├── Payloads.csv
 ├── features.csv
+├── realCase.csv
 └── README.md
 ```
 
@@ -44,6 +45,8 @@ seaborn
 
 Dataset gốc: **Payloads.csv** từ Github  
 [https://github.com/fmereani/Cross-Site-Scripting-XSS](https://github.com/fmereani/Cross-Site-Scripting-XSS)
+
+Dataset test riêng biệt: [https://github.com/payload-box/xss-payload-list/blob/main/Payloads/All-In-One.txt] (https://github.com/payload-box/xss-payload-list/blob/main/Payloads/All-In-One.txt)
 
 |          Payloads          |       Class        |
 | :------------------------: | :----------------: |
